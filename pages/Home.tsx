@@ -88,7 +88,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {STATS.map((stat, idx) => (
               <div key={idx} className="bg-blue-50/50 dark:bg-gray-800/50 p-8 rounded-2xl border border-blue-100 dark:border-gray-700 text-center hover:shadow-xl hover:border-corporate-blue/30 transition-all duration-300">
-                <div className="text-4xl md:text-5xl font-bold text-corporate-blue dark:text-blue-400 mb-2">
+                <div className="text-2xl md:text-5xl font-bold text-corporate-blue dark:text-blue-400 mb-2">
                   <CountUp end={stat.value} />
                 </div>
                 <div className="text-gray-700 dark:text-gray-400 text-sm font-bold uppercase tracking-widest">{stat.label}</div>

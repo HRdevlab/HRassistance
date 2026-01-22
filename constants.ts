@@ -71,7 +71,7 @@ export const SERVICES: Service[] = [
 
 export const STATS: Stat[] = [
   { value: '15+', label: 'Years Experience' },
-  { value: '4,000+', label: 'Placements' },
+  { value: '4000+', label: 'Placements' },
   { value: '200+', label: 'Companies Served' },
   { value: '100%', label: 'Specialist Recruiters' },
   { value: '50K+', label: 'Verified Candidates' },
