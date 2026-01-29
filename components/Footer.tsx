@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { COMPANY_NAME } from '../constants';
-import { Linkedin, Facebook, Twitter } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -22,14 +22,21 @@ const Footer: React.FC = () => {
               Your trusted partner for talent acquisition and recruitment solutions across India.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="https://www.linkedin.com/company/hrassistanceindia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a
+                href="mailto:info@hrassitance.co.in"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Email"
+              >
+                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>

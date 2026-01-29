@@ -145,7 +145,7 @@ const SiteMap: React.FC = () => {
                         </h2>
                         <ul className="space-y-3 pl-2 text-gray-700 dark:text-gray-300">
                             <li className="flex items-start">
-                                <span>info@edassist.co.in</span>
+                                <span>info@hrassist.co.in</span>
                             </li>
                             <li>
                                 <span>+91 98765 43210</span>

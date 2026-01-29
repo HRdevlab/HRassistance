@@ -105,7 +105,7 @@ export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
     title: 'Education Jobs',
     description: 'Find teaching and admin roles in leading institutions.',
     icon: GraduationCap,
-    actionText: 'Visit EdAssist',
+    actionText: 'Visit HrAssist',
     path: 'http://www.edassist.co.in',
     isExternal: true
   },

@@ -9,7 +9,7 @@ const FraudAlert: React.FC = () => {
                     <div className="inline-flex items-center justify-center p-3 bg-red-100 dark:bg-red-900/30 rounded-full mb-4">
                         <ShieldAlert className="h-8 w-8 text-red-600 dark:text-red-400" />
                     </div>
-                    <h1 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">Fraud Alert – Stay Safe</h1>
+                    <h1 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">Fraud Alert – Stay Safe While Using HrAssist</h1>
                     <p className="text-xl text-gray-600 dark:text-gray-400">
                         Your safety is our highest priority.
                     </p>
@@ -32,7 +32,7 @@ const FraudAlert: React.FC = () => {
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Requests for Money</h2>
                                 <p>
-                                    Never pay to apply, get shortlisted, or attend an interview. EdAssist does not charge candidates for job access. Avoid anyone asking for deposits, fees, or advance payments in exchange for job offers.
+                                    Never pay to apply, get shortlisted, or attend an interview. HrAssist does not charge candidates for job access. Avoid anyone asking for deposits, fees, or advance payments in exchange for job offers.
                                 </p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const FraudAlert: React.FC = () => {
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Fake Emails or Usernames</h2>
                                 <p>
-                                    Fraudsters may use misleading email addresses like Gmail or Yahoo. Official communication from EdAssist will always come from an <strong>@edassist.co.in</strong> email. Be cautious of unknown senders using our name.
+                                    Fraudsters may use misleading email addresses like Gmail or Yahoo. Official communication from HrAssist will always come from an <strong>@hrassist.co.in</strong> email. Be cautious of unknown senders using our name.
                                 </p>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ const FraudAlert: React.FC = () => {
                         <ul className="space-y-3">
                             <li className="flex items-start">
                                 <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 mr-2 mt-0.5" />
-                                <span>Apply only through EdAssist or trusted sources.</span>
+                                <span>Apply only through HrAssist or trusted sources.</span>
                             </li>
                             <li className="flex items-start">
                                 <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 mr-2 mt-0.5" />
@@ -111,7 +111,7 @@ const FraudAlert: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <AlertTriangle className="h-5 w-5 text-amber-500 mr-2 mt-0.5" />
-                                <span>Report suspicious activity to <a href="mailto:info@edassist.co.in" className="text-corporate-blue hover:underline">info@edassist.co.in</a>.</span>
+                                <span>Report suspicious activity to <a href="mailto:info@hrassist.co.in" className="text-corporate-blue hover:underline">info@hrassist.co.in</a>.</span>
                             </li>
                         </ul>
                         <p className="mt-6 text-sm italic">

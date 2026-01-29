@@ -12,7 +12,7 @@ const FAQS_DATA: { category: string; items: FAQItem[] }[] = [
         items: [
             {
                 question: 'Do I need to pay to register or apply for jobs?',
-                answer: 'No, EdAssist does not charge job seekers for registration, applying for jobs, or getting interviewed. Our services are completely free for candidates.',
+                answer: 'No, HrAssist does not charge job seekers for registration, applying for jobs, or getting interviewed. Our services are completely free for candidates.',
             },
             {
                 question: 'How do I apply for a job?',
@@ -33,7 +33,7 @@ const FAQS_DATA: { category: string; items: FAQItem[] }[] = [
         items: [
             {
                 question: 'How can I post a job?',
-                answer: 'Employers can contact us directly via the "Hire Talent" page or reach out to our team at info@edassist.co.in to discuss hiring requirements.',
+                answer: 'Employers can contact us directly via the "Hire Talent" page or reach out to our team at info@hrassist.co.in to discuss hiring requirements.',
             },
             {
                 question: 'What recruitment services do you offer?',
@@ -53,12 +53,12 @@ const FAQS_DATA: { category: string; items: FAQItem[] }[] = [
         category: 'General',
         items: [
             {
-                question: 'Where is EdAssist located?',
+                question: 'Where is HrAssist located?',
                 answer: 'Our registered office is at 205A, Town Square, Viman Nagar, Pune-411014, India. We serve clients across India.',
             },
             {
                 question: 'How do I contact support?',
-                answer: 'You can reach our help desk via email at info@edassist.co.in or call us at +91 98765 43210 during business hours.',
+                answer: 'You can reach our help desk via email at info@hrassist.co.in or call us at +91 98765 43210 during business hours.',
             }
         ]
     }
@@ -133,7 +133,7 @@ const FAQ: React.FC = () => {
                         Still have questions? We're here to help.
                     </p>
                     <a
-                        href="mailto:info@edassist.co.in"
+                        href="mailto:info@hrassist.co.in"
                         className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-corporate-blue hover:bg-corporate-dark transition-colors shadow-sm"
                     >
                         Contact Support

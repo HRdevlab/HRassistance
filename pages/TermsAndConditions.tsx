@@ -18,25 +18,25 @@ const TermsAndConditions: React.FC = () => {
                 <div className="prose prose-lg dark:prose-invert max-w-none space-y-8 text-gray-700 dark:text-gray-300">
                     <section>
                         <p className="mb-4">
-                            Welcome to EdAssist (the "Platform"), a job board service operated by HRassistance India Consultancy LLP, based in Pune, India. By accessing or using EdAssist, you agree to be bound by the following Terms and Conditions. Please read them carefully.
+                            Welcome to HrAssist (the "Platform"), a job board service operated by HRassistance India Consultancy LLP, based in Pune, India. By accessing or using HrAssist, you agree to be bound by the following Terms and Conditions. Please read them carefully.
                         </p>
                     </section>
 
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">1. Acceptance of Terms</h2>
                         <p>
-                            By accessing or using EdAssist, you agree to comply with and be bound by these Terms and Conditions, as well as our Privacy Policy. If you do not agree, you may not access or use the Platform.
+                            By accessing or using HrAssist, you agree to comply with and be bound by these Terms and Conditions, as well as our Privacy Policy. If you do not agree, you may not access or use the Platform.
                         </p>
                     </section>
 
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">2. Services Provided</h2>
-                        <p>EdAssist offers a platform to:</p>
+                        <p>HrAssist offers a platform to:</p>
                         <ul className="list-disc pl-6 space-y-1">
                             <li><strong>Job Seekers:</strong> Search and apply for jobs in the education sector and training programs.</li>
                             <li><strong>Employers/Recruiters:</strong> Post job listings, search candidate profiles, and manage recruitment activities.</li>
                         </ul>
-                        <p className="mt-2">EdAssist is not responsible for the quality, safety, or legality of jobs or resumes posted.</p>
+                        <p className="mt-2">HrAssist is not responsible for the quality, safety, or legality of jobs or resumes posted.</p>
                     </section>
 
                     <section>
@@ -69,7 +69,7 @@ const TermsAndConditions: React.FC = () => {
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">5. Job Listings & Applications</h2>
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Job postings must be accurate and comply with local employment regulations.</li>
-                            <li>EdAssist does not guarantee job placement and is not responsible for employer practices.</li>
+                            <li>HrAssist does not guarantee job placement and is not responsible for employer practices.</li>
                             <li>Users applying for jobs must ensure their information is truthful and up to date.</li>
                         </ul>
                     </section>
@@ -94,7 +94,7 @@ const TermsAndConditions: React.FC = () => {
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">8. Content Ownership</h2>
                         <p>
-                            All content you post remains your intellectual property. By posting on EdAssist, you grant us a non-exclusive, worldwide, royalty-free license to use, reproduce, and display such content solely for the purpose of operating and promoting the Platform.
+                            All content you post remains your intellectual property. By posting on HrAssist, you grant us a non-exclusive, worldwide, royalty-free license to use, reproduce, and display such content solely for the purpose of operating and promoting the Platform.
                         </p>
                     </section>
 
@@ -108,14 +108,14 @@ const TermsAndConditions: React.FC = () => {
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">10. Third-Party Links</h2>
                         <p>
-                            The Platform may contain links to third-party websites. EdAssist does not endorse or take responsibility for the content or policies of these external sites.
+                            The Platform may contain links to third-party websites. HrAssist does not endorse or take responsibility for the content or policies of these external sites.
                         </p>
                     </section>
 
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">11. Limitation of Liability</h2>
                         <p>
-                            EdAssist shall not be liable for any indirect, incidental, special, or consequential damages arising out of your use of or inability to use the Platform.
+                            HrAssist shall not be liable for any indirect, incidental, special, or consequential damages arising out of your use of or inability to use the Platform.
                         </p>
                     </section>
 
@@ -144,11 +144,11 @@ const TermsAndConditions: React.FC = () => {
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">15. Contact Us</h2>
                         <p className="mb-4">If you have any questions about these Terms, you may contact us at:</p>
                         <div className="space-y-2">
-                            <p className="font-bold">EdAssist</p>
+                            <p className="font-bold">HrAssist</p>
                             <p className="text-sm text-gray-500 dark:text-gray-400">(HRassistance India Consultancy LLP)</p>
                             <div className="flex items-center mt-2">
                                 <Mail className="h-4 w-4 mr-2" />
-                                <a href="mailto:info@edassist.co.in" className="text-corporate-blue hover:underline">info@edassist.co.in</a>
+                                <a href="mailto:info@hrassist.co.in" className="text-corporate-blue hover:underline">info@hrassist.co.in</a>
                             </div>
                             <div className="flex items-start mt-2">
                                 <MapPin className="h-4 w-4 mr-2 mt-1" />

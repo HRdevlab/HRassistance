@@ -19,7 +19,7 @@ const PrivacyPolicy: React.FC = () => {
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Introduction</h2>
                         <p>
-                            Welcome to EdAssist ("Company", "we", "our", "us"). We respect your privacy and are committed to protecting the personal information you provide while using our job board platform. This Privacy Policy explains how we collect, use, disclose, and safeguard your information.
+                            Welcome to HrAssist ("Company", "we", "our", "us"). We respect your privacy and are committed to protecting the personal information you provide while using our job board platform. This Privacy Policy explains how we collect, use, disclose, and safeguard your information.
                         </p>
                     </section>
 
@@ -66,7 +66,7 @@ const PrivacyPolicy: React.FC = () => {
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">3. Sharing of Information</h2>
                         <p>We do not sell your personal data. We may share data with:</p>
                         <ul className="list-disc pl-6 space-y-1">
-                            <li>Employers who post jobs on EdAssist (for applicants only)</li>
+                            <li>Employers who post jobs on HrAssist (for applicants only)</li>
                             <li>Third-party service providers assisting with platform operations (e.g., hosting, analytics, payment gateways)</li>
                             <li>Legal authorities, if required by law or to protect our legal rights</li>
                         </ul>
@@ -86,7 +86,7 @@ const PrivacyPolicy: React.FC = () => {
                             <li>Delete your profile or data upon request</li>
                             <li>Opt out of marketing communications</li>
                         </ul>
-                        <p className="mt-2">To exercise these rights, email us at <a href="mailto:info@edassist.co.in" className="text-corporate-blue hover:underline">info@edassist.co.in</a>.</p>
+                        <p className="mt-2">To exercise these rights, email us at <a href="mailto:info@hrassist.co.in" className="text-corporate-blue hover:underline">info@hrassist.co.in</a>.</p>
                     </section>
 
                     <section>
@@ -106,7 +106,7 @@ const PrivacyPolicy: React.FC = () => {
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">8. Children’s Privacy</h2>
                         <p>
-                            EdAssist is not intended for individuals under the age of 18. We do not knowingly collect data from children.
+                            HrAssist is not intended for individuals under the age of 18. We do not knowingly collect data from children.
                         </p>
                     </section>
 
@@ -128,11 +128,11 @@ const PrivacyPolicy: React.FC = () => {
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">11. Contact Us</h2>
                         <p className="mb-4">For any questions or concerns about this Privacy Policy:</p>
                         <div className="space-y-2">
-                            <p className="font-bold">EdAssist</p>
+                            <p className="font-bold">HrAssist</p>
                             <p className="text-sm text-gray-500 dark:text-gray-400">(HRassistance India Consultancy LLP)</p>
                             <div className="flex items-center mt-2">
                                 <Mail className="h-4 w-4 mr-2" />
-                                <a href="mailto:info@edassist.co.in" className="text-corporate-blue hover:underline">info@edassist.co.in</a>
+                                <a href="mailto:info@hrassist.co.in" className="text-corporate-blue hover:underline">info@hrassist.co.in</a>
                             </div>
                             <div className="flex items-start mt-2">
                                 <MapPin className="h-4 w-4 mr-2 mt-1" />
