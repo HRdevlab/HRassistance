@@ -8,6 +8,11 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import JobSeekers from './pages/JobSeekers';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
+import FraudAlert from './pages/FraudAlert';
+import FAQ from './pages/FAQ';
+import SiteMap from './pages/SiteMap';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -33,6 +38,11 @@ const App: React.FC = () => {
             <Route path="/services/:id" element={<ServiceDetail />} />
             <Route path="/job-seekers/*" element={<JobSeekers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsAndConditions />} />
+            <Route path="/trust-safety" element={<FraudAlert />} />
+            <Route path="/faqs" element={<FAQ />} />
+            <Route path="/sitemap" element={<SiteMap />} />
           </Routes>
         </main>
         <Footer />

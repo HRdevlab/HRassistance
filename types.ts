@@ -3,7 +3,10 @@ import { LucideIcon } from 'lucide-react';
 export interface NavItem {
   label: string;
   path: string;
+  children?: NavItem[];
+  isExternal?: boolean;
 }
+
 
 export interface Service {
   id: string;

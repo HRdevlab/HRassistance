@@ -174,12 +174,23 @@ const Home: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{card.title}</h3>
                 <p className="text-gray-700 dark:text-gray-400 text-sm mb-8 flex-grow leading-relaxed">{card.description}</p>
-                <NavLink
-                  to={card.path}
-                  className="w-full inline-flex justify-center items-center px-6 py-3 border-2 border-corporate-blue dark:border-blue-500 text-corporate-blue dark:text-blue-400 rounded-lg hover:bg-corporate-blue dark:hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm font-bold"
-                >
-                  {card.actionText}
-                </NavLink>
+                {card.isExternal ? (
+                  <a
+                    href={card.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex justify-center items-center px-6 py-3 border-2 border-corporate-blue dark:border-blue-500 text-corporate-blue dark:text-blue-400 rounded-lg hover:bg-corporate-blue dark:hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm font-bold"
+                  >
+                    {card.actionText}
+                  </a>
+                ) : (
+                  <NavLink
+                    to={card.path}
+                    className="w-full inline-flex justify-center items-center px-6 py-3 border-2 border-corporate-blue dark:border-blue-500 text-corporate-blue dark:text-blue-400 rounded-lg hover:bg-corporate-blue dark:hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm font-bold"
+                  >
+                    {card.actionText}
+                  </NavLink>
+                )}
               </div>
             ))}
           </div>

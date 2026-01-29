@@ -29,9 +29,24 @@ export const CONTACT_PHONE = "+91 98765 43210";
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
-  { label: 'Services', path: '/services' },
-  { label: 'Job Seekers', path: '/job-seekers' },
-  { label: 'Contact', path: '/contact' },
+  {
+    label: 'Job Seekers',
+    path: '/job-seekers',
+    children: [
+      { label: 'Browse Jobs', path: '/job-seekers/corporate' },
+      { label: 'Upskilling Courses', path: 'https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369', isExternal: true },
+      { label: 'Resume Builder', path: 'https://builder.zety.com/resume/experience-level?lpcvflow=1', isExternal: true },
+    ]
+  },
+  {
+    label: 'Employers',
+    path: '/employers',
+    children: [
+      { label: 'Our Services', path: '/services' },
+      { label: 'Hire Talent', path: '/contact' },
+    ]
+  },
+  { label: 'Contact Us', path: '/contact' },
 ];
 
 export const SERVICES: Service[] = [
@@ -91,21 +106,24 @@ export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
     description: 'Find teaching and admin roles in leading institutions.',
     icon: GraduationCap,
     actionText: 'Visit EdAssist',
-    path: '/job-seekers/education'
+    path: 'http://www.edassist.co.in',
+    isExternal: true
   },
   {
     title: 'Build Your CV',
     description: 'Create a professional resume that gets noticed.',
     icon: FileText,
     actionText: 'Build Now',
-    path: '/job-seekers/cv-builder'
+    path: 'https://builder.zety.com/resume/experience-level?lpcvflow=1',
+    isExternal: true
   },
   {
     title: 'Skill Courses',
     description: 'Upgrade your skills with industry-recognized certifications.',
     icon: BookOpen,
     actionText: 'View Courses',
-    path: '/job-seekers/courses'
+    path: 'https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369',
+    isExternal: true
   }
 ];
 
