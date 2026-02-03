@@ -15,6 +15,9 @@ export interface Service {
   fullDescription: string;
   icon: LucideIcon;
   benefits: string[];
+  children?: Service[];
+  parentId?: string;
+  image?: string;
 }
 
 export interface Stat {

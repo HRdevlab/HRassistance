@@ -30,9 +30,9 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-bold text-gray-900 dark:text-white mb-1 text-lg">Headquarters</h3>
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Level 5, Corporate Tower,<br />
-                      Cyber City, Gurugram,<br />
-                      Haryana, India - 122002
+                      205 A, Town Square Shopping Center<br />
+                      New Airport Rd, Viman Nagar<br />
+                      Pune, Maharashtra 411014
                     </p>
                   </div>
                 </div>
@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 dark:text-white mb-1 text-lg">Email Address</h3>
-                    <p className="text-gray-600 dark:text-gray-400 font-medium text-lg">contact@hrassistance.com</p>
+                    <p className="text-gray-600 dark:text-gray-400 font-medium text-lg">info@hrassitance.co.in</p>
                   </div>
                 </div>
 
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
         {/* Global Map Section */}
         <div className="bg-blue-100/20 dark:bg-gray-800 rounded-[2.5rem] h-[300px] overflow-hidden relative border border-blue-200 dark:border-gray-700 group shadow-2xl">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14030.748344405903!2d77.0805342!3d28.4594965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18e00d768137%3A0x738d9d480e606b2!2sCyber%20City%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1705910000000!5m2!1sen!2sin&iwloc=near"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2619!2d73.9167!3d18.5622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4136c54!2sTown%20Square%20Shopping%20Center!5e0!3m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
           ></iframe>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

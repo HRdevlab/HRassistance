@@ -74,8 +74,8 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6">Who We Are</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              HRassistance India partners with businesses to solve one of their most critical challenges—hiring the right talent. With over 15 years of experience, we bring structured processes, deep evaluation, and a strong talent network to deliver dependable hiring outcomes across industries.
+            <p className="text-l text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+              HRassistance partners with businesses to solve one of their most critical challenges—hiring the right talent. With over 15 years of experience, we bring structured processes, deep evaluation, and a strong talent network to deliver dependable hiring outcomes across industries.
             </p>
             <NavLink
               to="/about"
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
             </NavLink>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {STATS.map((stat, idx) => (
               <div key={idx} className="bg-blue-50/50 dark:bg-gray-800/50 p-8 rounded-2xl border border-blue-100 dark:border-gray-700 text-center hover:shadow-xl hover:border-corporate-blue/30 transition-all duration-300">
                 <div className="text-2xl md:text-5xl font-bold text-corporate-blue dark:text-blue-400 mb-2">
@@ -106,24 +106,26 @@ const Home: React.FC = () => {
             <p className="text-xl text-gray-700 dark:text-gray-400">Tailored recruitment solutions for every business need.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICES.map((service) => (
               <NavLink
                 key={service.id}
                 to={`/services/${service.id}`}
-                className="group block bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-corporate-blue dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300"
+                className="group block bg-white dark:bg-gray-800 p-10 md:p-12 min-h-[420px] rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-corporate-blue dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
               >
-                <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mb-6 group-hover:bg-corporate-blue dark:group-hover:bg-blue-600 transition-colors">
-                  <service.icon className="h-6 w-6 text-corporate-blue dark:text-blue-400 group-hover:text-white transition-colors" />
+                <div>
+                  <div className="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-8 group-hover:bg-corporate-blue dark:group-hover:bg-blue-600 transition-colors">
+                    <service.icon className="h-7 w-7 text-corporate-blue dark:text-blue-400 group-hover:text-white transition-colors" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-corporate-blue dark:group-hover:text-blue-400 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed mb-6">
+                    {service.shortDescription}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-corporate-blue dark:group-hover:text-blue-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-700 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                  {service.shortDescription}
-                </p>
-                <span className="text-corporate-blue dark:text-blue-400 text-sm font-bold flex items-center">
-                  Learn more <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
+                <span className="text-corporate-blue dark:text-blue-400 text-base font-bold flex items-center group-hover:translate-x-2 transition-transform duration-300">
+                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
                 </span>
               </NavLink>
             ))}

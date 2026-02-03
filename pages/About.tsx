@@ -26,7 +26,7 @@ const About: React.FC = () => {
               <h2 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-8">Crafting Success Stories Since 2009</h2>
               <div className="space-y-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Founded with a vision to streamline recruitment, HRassistance India has grown into a premier consultancy trusted by multinational corporations and Indian conglomerates alike. We started with a simple belief: hiring should be predictable, transparent, and quality-driven.
+                  Founded with a vision to streamline recruitment, HRassistance has grown into a premier consultancy trusted by multinational corporations and Indian conglomerates alike. We started with a simple belief: hiring should be predictable, transparent, and quality-driven.
                 </p>
                 <p>
                   Today, we stand as a beacon of reliability in the HR landscape, having successfully placed over 4,000 professionals in careers that matter.
@@ -72,7 +72,7 @@ const About: React.FC = () => {
             <div className="bg-white dark:bg-gray-800 p-12 rounded-3xl shadow-xl shadow-blue-500/5 border border-gray-100 dark:border-gray-700">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Our Core Values</h3>
               <ul className="space-y-4">
-                {['Integrity in every interaction', 'Commitment to quality', 'Speed with accuracy', 'Long-term partnership focus'].map((value, i) => (
+                {['Client-Centric Approach', 'Client Confidentiality', 'Professional Integrity', 'Commitment to Excellence'].map((value, i) => (
                   <li key={i} className="flex items-start group">
                     <div className="bg-blue-100 dark:bg-blue-900/40 p-1 rounded-full mr-4 mt-1 group-hover:bg-corporate-blue transition-colors">
                       <CheckCircle className="h-5 w-5 text-corporate-blue dark:text-blue-400 group-hover:text-white" />

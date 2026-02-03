@@ -22,28 +22,45 @@ import {
 } from 'lucide-react';
 import { NavItem, Service, Stat, JobSeekerCard, Industry } from './types';
 
-export const COMPANY_NAME = "HRassistance India Consultancy LLP";
-export const CONTACT_EMAIL = "contact@hrassistance.com";
+export const COMPANY_NAME = "HRassistance Consultancy LLP";
+export const CONTACT_EMAIL = "info@hrassitance.co.in";
 export const CONTACT_PHONE = "+91 98765 43210";
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
   {
+    label: 'Our Services',
+    path: '/services',
+    children: [
+      {
+        label: 'Permanent Recruitment',
+        path: '/services/permanent-recruitment',
+        children: [
+          { label: 'Database Selection', path: '/services/database-selection' },
+          { label: 'ExecutiveSearch', path: '/services/executive-search' },
+          { label: 'Advertised Search', path: '/services/advertised-search' },
+          { label: 'Turnkey Solutions', path: '/services/turnkey-solutions' },
+        ]
+      },
+      {
+        label: 'Training',
+        path: '/services/training',
+        children: [
+          { label: 'Soft Skills', path: '/services/soft-skills' },
+          { label: 'Leadership Training', path: '/services/leadership-training' },
+          { label: 'People Development', path: '/services/people-development' },
+        ]
+      },
+      { label: 'Resume Building', path: 'https://zety.com/resume-builder?ref=21193&click=497&reqid=4525880&utm_source=Trace-Advertising&utm_medium=affiliate&utm_campaign=trace-zty-resume-builder-subs-21193', isExternal: true },
+    ]
+  },
+  {
     label: 'Job Seekers',
     path: '/job-seekers',
     children: [
       { label: 'Browse Jobs', path: '/job-seekers/corporate' },
       { label: 'Upskilling Courses', path: 'https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369', isExternal: true },
-      { label: 'Resume Builder', path: 'https://builder.zety.com/resume/experience-level?lpcvflow=1', isExternal: true },
-    ]
-  },
-  {
-    label: 'Employers',
-    path: '/employers',
-    children: [
-      { label: 'Our Services', path: '/services' },
-      { label: 'Hire Talent', path: '/contact' },
     ]
   },
   { label: 'Contact Us', path: '/contact' },
@@ -56,41 +73,104 @@ export const SERVICES: Service[] = [
     shortDescription: 'Finding long-term talent that fits your company culture and goals.',
     fullDescription: 'Our Permanent Recruitment service is designed to help you build a stable and high-performing team. We go beyond the resume to understand candidates’ motivations, soft skills, and long-term potential.',
     icon: Users,
-    benefits: ['Extensive database access', 'Cultural fit assessment', 'Retention-focused hiring', 'Replacement guarantee']
+    benefits: ['Database Selection', 'Executive Search', 'Advertised Search', 'Turnkey Solutions'],
+    children: [
+      {
+        id: 'database-selection',
+        parentId: 'permanent-recruitment',
+        title: 'Database Selection',
+        shortDescription: 'Leveraging our extensive database to find the perfect match.',
+        fullDescription: 'We use our internal database and specialized sourcing tools to identify candidates who may not be visible on traditional job boards, ensuring access to top-tier talent.',
+        icon: Search,
+        benefits: ['Fast turnaround', 'Pre-vetted candidates', 'Large reach', 'Cost-effective'],
+        image: '/assets/Database-selection.jpg'
+      },
+      {
+        id: 'executive-search',
+        parentId: 'permanent-recruitment',
+        title: 'Executive Search',
+        shortDescription: 'Discreet search for leadership roles.',
+        fullDescription: 'Our headhunting approach is tailored for C-suite and senior management positions, focusing on candidates who are often passive but highly qualified for strategic roles.',
+        icon: Target,
+        benefits: ['Strict confidentiality', 'Global reach', 'Leadership assessment', 'Market mapping'],
+        image: '/assets/Executive-search.jpg'
+      },
+      {
+        id: 'advertised-search',
+        parentId: 'permanent-recruitment',
+        title: 'Advertised Search',
+        shortDescription: 'Managing end-to-end recruitment campaigns.',
+        fullDescription: 'We design and execute targeted advertising campaigns across multiple platforms to attract active job seekers and manage the entire response lifecycle.',
+        icon: Megaphone,
+        benefits: ['Brand visibility', 'Wide talent pool', 'Expert screening', 'Campaign management'],
+        image: '/assets/Advertised-search.jpg'
+      },
+      {
+        id: 'turnkey-solutions',
+        parentId: 'permanent-recruitment',
+        title: 'Turnkey Solutions',
+        shortDescription: 'Comprehensive mass hiring and project-based recruitment.',
+        fullDescription: 'Perfect for new setup expansions or specialized projects, we provide an end-to-end mass hiring solution that covers everything from planning to final onboarding.',
+        icon: Briefcase,
+        benefits: ['Scalable process', 'Standardized assessment', 'Rapid onboarding', 'Single point of contact'],
+        image: '/assets/Turnkey-solutions.jpg'
+      }
+    ]
   },
   {
-    id: 'executive-search',
-    title: 'Executive Search',
-    shortDescription: 'Headhunting senior leadership for strategic roles.',
-    fullDescription: 'We specialize in identifying and attracting top-tier leadership talent. Our discreet and thorough executive search process ensures you get visionaries who can drive your organization forward.',
-    icon: Target,
-    benefits: ['Confidential handling', 'C-Suite specialization', 'Market intelligence', 'Leadership assessment']
+    id: 'training',
+    title: 'Training',
+    shortDescription: 'Empowering your workforce with essential skills and leadership capabilities.',
+    fullDescription: 'We provide comprehensive training solutions to enhance employee performance and organizational growth through specialized programs.',
+    icon: GraduationCap,
+    benefits: ['Soft Skills', 'Leadership Training', 'People Development'],
+    children: [
+      {
+        id: 'soft-skills',
+        parentId: 'training',
+        title: 'Soft Skills',
+        shortDescription: 'Enhancing communication and teamwork.',
+        fullDescription: 'Our soft skills programs focus on emotional intelligence, effective communication, and interpersonal relationships to create a more cohesive work environment.',
+        icon: Users,
+        benefits: ['Better collaboration', 'Conflict resolution', 'Customer focus', 'Personal effectiveness'],
+        image: '/assets/Soft-skills.jpg'
+      },
+      {
+        id: 'leadership-training',
+        parentId: 'training',
+        title: 'Leadership Training',
+        shortDescription: 'Developing next-gen leaders.',
+        fullDescription: 'We help identify and groom potential leaders within your organization, providing them with the tools and mindset needed for management and strategic oversight.',
+        icon: Target,
+        benefits: ['Strategic thinking', 'Management skills', 'Team building', 'Succession planning'],
+        image: '/assets/Leadership-training.jpg'
+      },
+      {
+        id: 'people-development',
+        parentId: 'training',
+        title: 'People Development',
+        shortDescription: 'Holistic growth and talent retention.',
+        fullDescription: 'Customized development pathways that align employee aspirations with organizational goals, ensuring long-term engagement and productivity.',
+        icon: BookOpen,
+        benefits: ['Talent retention', 'Career pathing', 'Skills mapping', 'Employee engagement'],
+        image: '/assets/People-development.jpg'
+      }
+    ]
   },
   {
-    id: 'turnkey-hiring',
-    title: 'Turnkey Hiring',
-    shortDescription: 'End-to-end mass hiring solutions for new setups or expansions.',
-    fullDescription: 'Perfect for startups, new branches, or large-scale expansions. We manage the entire recruitment lifecycle from planning to onboarding for multiple positions simultaneously.',
-    icon: LayoutGrid,
-    benefits: ['Bulk hiring management', 'Cost-effective', 'Standardized process', 'Rapid deployment']
-  },
-  {
-    id: 'advertised-search',
-    title: 'Advertised Search',
-    shortDescription: 'Managing campaigns to attract specific talent pools.',
-    fullDescription: 'We design and manage targeted advertising campaigns to attract active job seekers for niche or high-volume roles, handling all responses and screening.',
-    icon: Megaphone,
-    benefits: ['Brand visibility', 'Targeted reach', 'Response management', 'Campaign analytics']
+    id: 'resume-building',
+    title: 'Resume Building',
+    shortDescription: 'Professional resume services to help candidates stand out.',
+    fullDescription: 'We help professionals create compelling resumes that highlight their strengths and achievements, increasing their chances of landing their dream job.',
+    icon: FileText,
+    benefits: ['ATS Optimization', 'Professional Formatting', 'Content Highlighting', 'Cover Letter Support']
   }
 ];
 
 export const STATS: Stat[] = [
+  { value: '1000+', label: 'Roles Delivered' },
   { value: '15+', label: 'Years Experience' },
-  { value: '4000+', label: 'Placements' },
-  { value: '200+', label: 'Companies Served' },
-  { value: '100%', label: 'Specialist Recruiters' },
-  { value: '50K+', label: 'Verified Candidates' },
-  { value: '6', label: 'Step Proven Process' },
+  { value: '100%', label: 'Enterprise Focus' },
 ];
 
 export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
@@ -105,7 +185,7 @@ export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
     title: 'Education Jobs',
     description: 'Find teaching and admin roles in leading institutions.',
     icon: GraduationCap,
-    actionText: 'Visit HrAssist',
+    actionText: 'Visit EdAssist',
     path: 'http://www.edassist.co.in',
     isExternal: true
   },
@@ -114,7 +194,7 @@ export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
     description: 'Create a professional resume that gets noticed.',
     icon: FileText,
     actionText: 'Build Now',
-    path: 'https://builder.zety.com/resume/experience-level?lpcvflow=1',
+    path: 'https://zety.com/resume-builder?ref=21193&click=497&reqid=4525880&utm_source=Trace-Advertising&utm_medium=affiliate&utm_campaign=trace-zty-resume-builder-subs-21193',
     isExternal: true
   },
   {
@@ -154,3 +234,4 @@ export const PROBLEMS_SOLVED = [
   { icon: Zap, problem: 'Urgent roles', solution: 'Specialist recruiters close positions faster' },
   { icon: ShieldCheck, problem: 'Unpredictable hiring', solution: 'We bring clarity, consistency, and reliability' },
 ];
+

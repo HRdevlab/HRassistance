@@ -46,7 +46,7 @@ const FraudAlert: React.FC = () => {
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Fake Emails or Usernames</h2>
                                 <p>
-                                    Fraudsters may use misleading email addresses like Gmail or Yahoo. Official communication from HrAssist will always come from an <strong>@hrassist.co.in</strong> email. Be cautious of unknown senders using our name.
+                                    Fraudsters may use misleading email addresses like Gmail or Yahoo. Official communication from HrAssist will always come from an <strong>@hrassitance.co.in</strong> email. Be cautious of unknown senders using our name.
                                 </p>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ const FraudAlert: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <AlertTriangle className="h-5 w-5 text-amber-500 mr-2 mt-0.5" />
-                                <span>Report suspicious activity to <a href="mailto:info@hrassist.co.in" className="text-corporate-blue hover:underline">info@hrassist.co.in</a>.</span>
+                                <span>Report suspicious activity to <a href="mailto:info@hrassitance.co.in" className="text-corporate-blue hover:underline">info@hrassitance.co.in</a>.</span>
                             </li>
                         </ul>
                         <p className="mt-6 text-sm italic">

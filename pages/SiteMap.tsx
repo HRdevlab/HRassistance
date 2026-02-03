@@ -68,28 +68,23 @@ const SiteMap: React.FC = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://builder.zety.com/resume/experience-level?lpcvflow=1" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors ml-4">
+                                <a href="https://zety.com/resume-builder?ref=21193&click=497&reqid=4525880&utm_source=Trace-Advertising&utm_medium=affiliate&utm_campaign=trace-zty-resume-builder-subs-21193" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors ml-4">
                                     <ChevronRight className="h-3 w-3 mr-2 text-gray-400" /> Resume Builder (External)
                                 </a>
                             </li>
                         </ul>
                     </div>
 
-                    {/* Employers / Services */}
+                    {/* Our Services */}
                     <div className="space-y-6">
                         <h2 className="text-xl font-bold text-gray-900 dark:text-white flex items-center border-b border-gray-200 dark:border-gray-700 pb-2">
                             <Briefcase className="h-5 w-5 mr-2 text-corporate-blue dark:text-blue-400" />
-                            For Employers
+                            Our Services
                         </h2>
                         <ul className="space-y-3 pl-2">
                             <li>
-                                <NavLink to="/employers" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors">
-                                    <ChevronRight className="h-4 w-4 mr-2 text-gray-400" /> Employers Overview
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/services" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors ml-4">
-                                    <ChevronRight className="h-3 w-3 mr-2 text-gray-400" /> All Services
+                                <NavLink to="/services" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors">
+                                    <ChevronRight className="h-4 w-4 mr-2 text-gray-400" /> Services Overview
                                 </NavLink>
                             </li>
                             {SERVICES.map(service => (
@@ -97,6 +92,17 @@ const SiteMap: React.FC = () => {
                                     <NavLink to={`/services/${service.id}`} className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors ml-4">
                                         <ChevronRight className="h-3 w-3 mr-2 text-gray-400" /> {service.title}
                                     </NavLink>
+                                    {service.children && (
+                                        <ul className="ml-8 mt-2 space-y-2">
+                                            {service.children.map(child => (
+                                                <li key={child.id}>
+                                                    <NavLink to={`/services/${child.id}`} className="flex items-center text-gray-600 dark:text-gray-400 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors text-sm">
+                                                        <ChevronRight className="h-2 w-2 mr-2 text-gray-400" /> {child.title}
+                                                    </NavLink>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
                                 </li>
                             ))}
                             <li>
@@ -145,7 +151,7 @@ const SiteMap: React.FC = () => {
                         </h2>
                         <ul className="space-y-3 pl-2 text-gray-700 dark:text-gray-300">
                             <li className="flex items-start">
-                                <span>info@hrassist.co.in</span>
+                                <span>info@hrassitance.co.in</span>
                             </li>
                             <li>
                                 <span>+91 98765 43210</span>

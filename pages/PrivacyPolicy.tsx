@@ -86,7 +86,7 @@ const PrivacyPolicy: React.FC = () => {
                             <li>Delete your profile or data upon request</li>
                             <li>Opt out of marketing communications</li>
                         </ul>
-                        <p className="mt-2">To exercise these rights, email us at <a href="mailto:info@hrassist.co.in" className="text-corporate-blue hover:underline">info@hrassist.co.in</a>.</p>
+                        <p className="mt-2">To exercise these rights, email us at <a href="mailto:info@hrassitance.co.in" className="text-corporate-blue hover:underline">info@hrassitance.co.in</a>.</p>
                     </section>
 
                     <section>
@@ -129,10 +129,10 @@ const PrivacyPolicy: React.FC = () => {
                         <p className="mb-4">For any questions or concerns about this Privacy Policy:</p>
                         <div className="space-y-2">
                             <p className="font-bold">HrAssist</p>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">(HRassistance India Consultancy LLP)</p>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">(HRassistance Consultancy LLP)</p>
                             <div className="flex items-center mt-2">
                                 <Mail className="h-4 w-4 mr-2" />
-                                <a href="mailto:info@hrassist.co.in" className="text-corporate-blue hover:underline">info@hrassist.co.in</a>
+                                <a href="mailto:info@hrassitance.co.in" className="text-corporate-blue hover:underline">info@hrassitance.co.in</a>
                             </div>
                             <div className="flex items-start mt-2">
                                 <MapPin className="h-4 w-4 mr-2 mt-1" />

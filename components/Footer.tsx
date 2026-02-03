@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-col items-center md:items-start mb-4">
               <img
                 src="/assets/Logo-Dark.png"
-                alt="HRassistance India"
+                alt="HRassistance"
                 className="h-10 w-auto object-contain"
               />
             </div>
@@ -46,13 +46,8 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company Information</h3>
             <ul className="space-y-2">
               <li><NavLink to="/about" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</NavLink></li>
-              <li>
-                <a href="https://hrassistance.zohorecruit.com/jobs/Careers" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Careers
-                </a>
-              </li>
               <li><NavLink to="/job-seekers" className="text-gray-400 hover:text-white transition-colors text-sm">Job seekers</NavLink></li>
-              <li><NavLink to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Employers</NavLink></li>
+              <li><NavLink to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Our Services</NavLink></li>
               <li><NavLink to="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact Us</NavLink></li>
             </ul>
           </div>

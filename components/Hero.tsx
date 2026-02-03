@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         style={{ backgroundColor: theme === 'light' ? 'rgba(78, 78, 78, 1)' : 'rgba(51, 59, 82, 1)' }}
       >
         <img
-          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+          src="/assets/Home-bg.jpg"
           alt="HR Strategy"
           className="w-full h-full object-cover mix-blend-overlay opacity-50 transition-opacity duration-700"
         />
@@ -36,13 +36,15 @@ const Hero: React.FC = () => {
               Hire Talent
               <ArrowRight className="ml-2 h-5 w-5" />
             </NavLink>
-            <NavLink
-              to="/job-seekers"
+            <a
+              href="https://hrassistance.zohorecruit.com/jobs/Careers"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex justify-center items-center px-8 py-4 border-2 border-white/40 text-base font-bold rounded bg-white/10 text-white hover:bg-white/20 transition-all duration-300 backdrop-blur-md hover:-translate-y-1"
             >
               Find Jobs
               <Search className="ml-2 h-5 w-5" />
-            </NavLink>
+            </a>
           </div>
         </div>
       </div>

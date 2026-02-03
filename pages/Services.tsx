@@ -47,13 +47,11 @@ const Services: React.FC = () => {
                 <div className="relative bg-white dark:bg-gray-800 rounded-[2.5rem] h-80 md:h-[450px] flex items-center justify-center overflow-hidden border border-blue-100 dark:border-gray-700 shadow-2xl">
                   <img
                     src={
-                      service.id === 'executive-search'
-                        ? "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80"
-                        : service.id === 'permanent-recruitment'
-                          ? "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
-                          : service.id === 'turnkey-hiring'
-                            ? "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                            : "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                      service.id === 'permanent-recruitment'
+                        ? "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80"
+                        : service.id === 'training'
+                          ? "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
+                          : "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80"
                     }
                     alt={service.title}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
