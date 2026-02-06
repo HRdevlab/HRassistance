@@ -2,68 +2,53 @@ import React from 'react';
 
 const ContactForm: React.FC = () => {
   return (
-    <form className="space-y-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Full Name</label>
+    <form className="space-y-10 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        <div className="relative group">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-900 dark:text-white mb-1 group-focus-within:text-corporate-blue dark:group-focus-within:text-blue-400 transition-colors">Your Name</label>
           <input
             type="text"
             id="name"
-            className="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-corporate-blue focus:border-transparent outline-none transition-all"
-            placeholder="John Doe"
+            className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-lg placeholder:text-gray-400" placeholder="John Trangely"
           />
         </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
+        <div className="relative group">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-900 dark:text-white mb-1 group-focus-within:text-corporate-blue dark:group-focus-within:text-blue-400 transition-colors">Your Email</label>
           <input
             type="email"
             id="email"
-            className="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-corporate-blue focus:border-transparent outline-none transition-all"
-            placeholder="john@company.com"
+            className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-lg placeholder:text-gray-400"
+            placeholder="hello@nurency.com"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone Number</label>
-          <input
-            type="tel"
-            id="phone"
-            className="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-corporate-blue focus:border-transparent outline-none transition-all"
-            placeholder="+91 98765 43210"
-          />
-        </div>
-        <div>
-          <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Company Name</label>
-          <input
-            type="text"
-            id="company"
-            className="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-corporate-blue focus:border-transparent outline-none transition-all"
-            placeholder="Your Company"
-          />
-        </div>
+      <div className="relative group">
+        <label htmlFor="subject" className="block text-sm font-medium text-gray-900 dark:text-white mb-2 transition-colors">Your Subject</label>
+        <input
+          type="text"
+          id="subject"
+          className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-lg placeholder:text-gray-400"
+          placeholder="I want to hire you quickly"
+        />
       </div>
 
-      <div>
-        <label htmlFor="requirement" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Requirement</label>
+      <div className="relative group">
+        <label htmlFor="message" className="block text-sm font-medium text-gray-900 dark:text-white mb-2">Message</label>
         <textarea
-          id="requirement"
+          id="message"
           rows={4}
-          className="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-corporate-blue focus:border-transparent outline-none transition-all"
-          placeholder="Tell us about your hiring needs..."
+          className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-lg resize-none placeholder:text-gray-400"
+          placeholder="Write here your message"
         ></textarea>
       </div>
 
       <button
         type="submit"
-        className="w-full bg-corporate-blue dark:bg-blue-600 text-white font-bold py-4 rounded shadow-lg hover:bg-corporate-dark dark:hover:bg-blue-700 transition-all duration-300 mt-2 hover:-translate-y-0.5 active:translate-y-0"
+        className="bg-corporate-blue dark:bg-blue-600 text-white font-bold px-12 py-5 rounded-2xl shadow-xl shadow-blue-500/20 hover:bg-corporate-dark dark:hover:bg-blue-700 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center text-lg"
       >
-        Request a Callback
+        Send Message
       </button>
-      <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-3">
-        Our team typically responds within 24 hours.
-      </p>
     </form>
   );
 };

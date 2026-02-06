@@ -29,7 +29,7 @@ const FAQS_DATA: { category: string; items: FAQItem[] }[] = [
         ]
     },
     {
-        category: 'Our Services',
+        category: 'Employers',
         items: [
             {
                 question: 'How can I post a job?',
@@ -37,7 +37,7 @@ const FAQS_DATA: { category: string; items: FAQItem[] }[] = [
             },
             {
                 question: 'What services do you offer?',
-                answer: 'We offer Permanent Recruitment (Database Selection, Executive Search, Advertised Search, Turnkey Solutions), Training (Soft Skills, Leadership Training, People Development), and Professional Resume Building.',
+                answer: 'We offer Permanent Recruitment (Database Selection, Executive Search, Turnkey Solutions), Training (Soft Skills, Leadership Training, People Development), and Placement Services.',
             },
             {
                 question: 'How long does it take to close a position?',

@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import ContactForm from '../components/ContactForm';
+import ContactSection from '../components/ContactSection';
 import {
   SERVICES,
   STATS,
@@ -102,18 +103,17 @@ const Home: React.FC = () => {
       <section className="py-20 md:py-28 bg-gray-50 dark:bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6">Our Services</h2>
+            <h2 className="text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6">Employers</h2>
             <p className="text-xl text-gray-700 dark:text-gray-400">Tailored recruitment solutions for every business need.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICES.map((service) => (
-              <NavLink
+              <div
                 key={service.id}
-                to={`/services/${service.id}`}
-                className="group block bg-white dark:bg-gray-800 p-10 md:p-12 min-h-[420px] rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-corporate-blue dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+                className="group block bg-white dark:bg-gray-800 p-10 md:p-12 min-h-[480px] rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-corporate-blue dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 flex flex-col"
               >
-                <div>
+                <div className="flex-grow">
                   <div className="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-8 group-hover:bg-corporate-blue dark:group-hover:bg-blue-600 transition-colors">
                     <service.icon className="h-7 w-7 text-corporate-blue dark:text-blue-400 group-hover:text-white transition-colors" />
                   </div>
@@ -123,11 +123,31 @@ const Home: React.FC = () => {
                   <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed mb-6">
                     {service.shortDescription}
                   </p>
+
+                  {/* Sub-links for Employers */}
+                  {service.children && service.children.length > 0 && (
+                    <ul className="space-y-3 mb-8">
+                      {service.children.map((child) => (
+                        <li key={child.id}>
+                          <NavLink
+                            to={`/services/${child.id}`}
+                            className="text-sm font-bold text-gray-600 dark:text-gray-400 hover:text-corporate-blue dark:hover:text-blue-400 flex items-center"
+                          >
+                            <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            {child.title}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-                <span className="text-corporate-blue dark:text-blue-400 text-base font-bold flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                </span>
-              </NavLink>
+                <NavLink
+                  to={`/services/${service.id}`}
+                  className="text-corporate-blue dark:text-blue-400 text-base font-bold flex items-center group-hover:translate-x-2 transition-transform duration-300 mt-auto"
+                >
+                  Explore {service.title} <ArrowRight className="ml-2 h-4 w-4" />
+                </NavLink>
+              </div>
             ))}
           </div>
 
@@ -201,16 +221,12 @@ const Home: React.FC = () => {
 
       {/* Contact Form Section */}
       <section id="contact" className="py-28 bg-white dark:bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h2>
             <p className="text-xl text-gray-700 dark:text-gray-400">Share your requirement and our team will connect within 24 hours.</p>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] dark:shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
-            <div className="p-8 md:p-16">
-              <ContactForm />
-            </div>
-          </div>
+          <ContactSection />
         </div>
       </section>
     </div>

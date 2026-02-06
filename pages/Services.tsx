@@ -8,7 +8,7 @@ const Services: React.FC = () => {
     <div className="bg-white dark:bg-gray-900 min-h-screen">
       <div className="bg-blue-100/30 dark:bg-gray-800/50 py-16 md:py-24 border-b border-blue-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold text-gray-900 dark:text-white mb-6">Our Services</h1>
+          <h1 className="text-5xl md:text-6xl font-heading font-bold text-gray-900 dark:text-white mb-6">Employers</h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Comprehensive recruitment solutions designed to meet the dynamic needs of modern businesses.
           </p>

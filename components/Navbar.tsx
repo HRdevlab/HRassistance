@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
+import { Menu, X, Sun, Moon, ChevronDown, Linkedin } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { useTheme } from './ThemeContext';
 
@@ -100,6 +100,15 @@ const Navbar: React.FC = () => {
             >
               {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
             </button>
+            <a
+              href="https://www.linkedin.com/company/hrassistanceindia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-blue-600 dark:text-blue-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -110,6 +119,15 @@ const Navbar: React.FC = () => {
             >
               {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
             </button>
+            <a
+              href="https://www.linkedin.com/company/hrassistanceindia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-blue-600 dark:text-blue-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
             <button
               onClick={toggleMenu}
               className="text-gray-600 dark:text-gray-300 hover:text-corporate-blue focus:outline-none"

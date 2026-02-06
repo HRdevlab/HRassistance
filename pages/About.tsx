@@ -10,7 +10,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-heading font-bold text-gray-900 dark:text-white mb-6">About Us</h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Bridging the gap between exceptional talent and industry-leading organizations for over 15 years.
+            Bridging the gap between exceptional talent and industry-leading organizations.
           </p>
         </div>
       </div>
@@ -23,7 +23,7 @@ const About: React.FC = () => {
               <div className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-corporate-blue dark:text-blue-400 rounded-full text-sm font-bold uppercase tracking-wider mb-6">
                 Our Journey
               </div>
-              <h2 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-8">Crafting Success Stories Since 2009</h2>
+              <h2 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-8">Crafting Success Stories Since 2010</h2>
               <div className="space-y-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
                   Founded with a vision to streamline recruitment, HRassistance has grown into a premier consultancy trusted by multinational corporations and Indian conglomerates alike. We started with a simple belief: hiring should be predictable, transparent, and quality-driven.

@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><NavLink to="/about" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</NavLink></li>
               <li><NavLink to="/job-seekers" className="text-gray-400 hover:text-white transition-colors text-sm">Job seekers</NavLink></li>
-              <li><NavLink to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Our Services</NavLink></li>
+              <li><NavLink to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Employers</NavLink></li>
               <li><NavLink to="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact Us</NavLink></li>
             </ul>
           </div>

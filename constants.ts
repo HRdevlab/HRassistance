@@ -18,7 +18,9 @@ import {
   ShieldCheck,
   Zap,
   LayoutGrid,
-  Hospital
+  Hospital,
+  UserCheck,
+  ArrowRightLeft
 } from 'lucide-react';
 import { NavItem, Service, Stat, JobSeekerCard, Industry } from './types';
 
@@ -30,7 +32,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
   {
-    label: 'Our Services',
+    label: 'Employers',
     path: '/services',
     children: [
       {
@@ -39,7 +41,6 @@ export const NAV_ITEMS: NavItem[] = [
         children: [
           { label: 'Database Selection', path: '/services/database-selection' },
           { label: 'ExecutiveSearch', path: '/services/executive-search' },
-          { label: 'Advertised Search', path: '/services/advertised-search' },
           { label: 'Turnkey Solutions', path: '/services/turnkey-solutions' },
         ]
       },
@@ -52,15 +53,16 @@ export const NAV_ITEMS: NavItem[] = [
           { label: 'People Development', path: '/services/people-development' },
         ]
       },
-      { label: 'Resume Building', path: 'https://zety.com/resume-builder?ref=21193&click=497&reqid=4525880&utm_source=Trace-Advertising&utm_medium=affiliate&utm_campaign=trace-zty-resume-builder-subs-21193', isExternal: true },
+      { label: 'Placement Services', path: '/services/out-placement-services' },
     ]
   },
   {
     label: 'Job Seekers',
     path: '/job-seekers',
     children: [
-      { label: 'Browse Jobs', path: '/job-seekers/corporate' },
+      { label: 'Browse Jobs', path: 'https://hrassistance.zohorecruit.com/jobs/Careers' },
       { label: 'Upskilling Courses', path: 'https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369', isExternal: true },
+      { label: 'Resume Building', path: 'https://zety.com/resume-builder?ref=21193&click=497&reqid=4525880&utm_source=Trace-Advertising&utm_medium=affiliate&utm_campaign=trace-zty-resume-builder-subs-21193', isExternal: true },
     ]
   },
   { label: 'Contact Us', path: '/contact' },
@@ -71,9 +73,9 @@ export const SERVICES: Service[] = [
     id: 'permanent-recruitment',
     title: 'Permanent Recruitment',
     shortDescription: 'Finding long-term talent that fits your company culture and goals.',
-    fullDescription: 'Our Permanent Recruitment service is designed to help you build a stable and high-performing team. We go beyond the resume to understand candidates’ motivations, soft skills, and long-term potential.',
+    fullDescription: 'Our Permanent Recruitment service is designed to help you build a stable and high-performing team. We go beyond the resume to understand candidates\' motivations, soft skills, and long-term potential.',
     icon: Users,
-    benefits: ['Database Selection', 'Executive Search', 'Advertised Search', 'Turnkey Solutions'],
+    benefits: ['Database Selection', 'Executive Search', 'Turnkey Solutions'],
     children: [
       {
         id: 'database-selection',
@@ -94,16 +96,6 @@ export const SERVICES: Service[] = [
         icon: Target,
         benefits: ['Strict confidentiality', 'Global reach', 'Leadership assessment', 'Market mapping'],
         image: '/assets/Executive-search.jpg'
-      },
-      {
-        id: 'advertised-search',
-        parentId: 'permanent-recruitment',
-        title: 'Advertised Search',
-        shortDescription: 'Managing end-to-end recruitment campaigns.',
-        fullDescription: 'We design and execute targeted advertising campaigns across multiple platforms to attract active job seekers and manage the entire response lifecycle.',
-        icon: Megaphone,
-        benefits: ['Brand visibility', 'Wide talent pool', 'Expert screening', 'Campaign management'],
-        image: '/assets/Advertised-search.jpg'
       },
       {
         id: 'turnkey-solutions',
@@ -158,17 +150,23 @@ export const SERVICES: Service[] = [
     ]
   },
   {
-    id: 'resume-building',
-    title: 'Resume Building',
-    shortDescription: 'Professional resume services to help candidates stand out.',
-    fullDescription: 'We help professionals create compelling resumes that highlight their strengths and achievements, increasing their chances of landing their dream job.',
-    icon: FileText,
-    benefits: ['ATS Optimization', 'Professional Formatting', 'Content Highlighting', 'Cover Letter Support']
-  }
+    id: 'out-placement-services',
+    title: 'Placement Services',
+    shortDescription: 'Supporting employees through career transitions with dignity and care.',
+    fullDescription: 'Our Placement Services help organizations manage workforce transitions professionally while supporting departing employees in finding new opportunities.',
+    icon: ArrowRightLeft,
+    benefits: [
+      'Career Counseling & Assessment',
+      'Resume & LinkedIn Optimization',
+      'Interview Preparation & Coaching',
+      'Job Search Strategy & Placement'
+    ],
+    image: '/assets/Out-placement-services.jpg'
+  },
 ];
 
 export const STATS: Stat[] = [
-  { value: '1000+', label: 'Roles Delivered' },
+  { value: '2000+', label: 'Roles Delivered' },
   { value: '15+', label: 'Years Experience' },
   { value: '100%', label: 'Enterprise Focus' },
 ];
@@ -179,7 +177,8 @@ export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
     description: 'Explore opportunities with top MNCs and Indian firms.',
     icon: Briefcase,
     actionText: 'Browse Jobs',
-    path: '/job-seekers/corporate'
+    path: 'https://hrassistance.zohorecruit.com/jobs/Careers',
+    isExternal: true
   },
   {
     title: 'Education Jobs',

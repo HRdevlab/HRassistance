@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Navigate, NavLink } from 'react-router-dom';
 import { SERVICES, PROCESS_STEPS } from '../constants';
 import { CheckCircle, ArrowRight } from 'lucide-react';
-import ContactForm from '../components/ContactForm';
+import ContactSection from '../components/ContactSection';
 import { Service } from '../types';
 
 const ServiceDetail: React.FC = () => {
@@ -102,6 +102,9 @@ const ServiceDetail: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Main Content Side */}
           <div className="w-full lg:w-1/2 prose prose-lg dark:prose-invert max-w-none">
+            <div className="inline-flex p-4 bg-blue-100 dark:bg-blue-900/40 rounded-2xl mb-8 border border-blue-200 dark:border-transparent">
+              <service.icon className="h-10 w-10 text-corporate-blue dark:text-blue-400" />
+            </div>
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               {service.title}
             </h1>
@@ -148,18 +151,8 @@ const ServiceDetail: React.FC = () => {
         </div>
 
         {/* Contact Section - Full width below the split section */}
-        <div className="mt-24 max-w-4xl mx-auto">
-          <div className="bg-blue-50/40 dark:bg-gray-800 p-8 md:p-12 rounded-[2.5rem] border border-blue-100 dark:border-gray-700 shadow-xl shadow-blue-500/5">
-            <div className="mb-8 text-center">
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Interested in this service?</h3>
-              <p className="text-gray-700 dark:text-gray-400 text-lg font-medium leading-relaxed">
-                Fill out the form below and our specialized {service.title.toLowerCase()} team will contact you shortly.
-              </p>
-            </div>
-            <div className="bg-white dark:bg-gray-900/50 rounded-2xl p-6 md:p-10 border border-blue-50 dark:border-gray-700 mx-auto">
-              <ContactForm />
-            </div>
-          </div>
+        <div className="mt-24 max-w-7xl mx-auto">
+          <ContactSection />
         </div>
       </div>
     </div>
