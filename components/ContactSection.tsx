@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactForm from './ContactForm';
-import { Mail, Phone, MapPin } from 'lucide-react';
-import { CONTACT_EMAIL, CONTACT_PHONE } from '../constants';
+import { Mail, MapPin } from 'lucide-react';
+import { CONTACT_EMAIL } from '../constants';
 
 const ContactSection: React.FC = () => {
     return (
@@ -17,13 +17,6 @@ const ContactSection: React.FC = () => {
                         </p>
 
                         <div className="space-y-8">
-                            <a href={`tel:${CONTACT_PHONE}`} className="flex items-center group cursor-pointer">
-                                <div className="p-3 bg-white/10 rounded-xl mr-5 group-hover:bg-white/20 transition-all border border-white/5">
-                                    <Phone className="h-5 w-5 text-white" />
-                                </div>
-                                <div className="text-lg font-bold group-hover:translate-x-1 transition-transform">{CONTACT_PHONE}</div>
-                            </a>
-
                             <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center group cursor-pointer">
                                 <div className="p-3 bg-white/10 rounded-xl mr-5 group-hover:bg-white/20 transition-all border border-white/5">
                                     <Mail className="h-5 w-5 text-white" />

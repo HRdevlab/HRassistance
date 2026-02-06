@@ -36,35 +36,6 @@ const JobSeekers: React.FC = () => {
         </div>
 
         <div className="space-y-32">
-          {/* Corporate Jobs Section */}
-          <div id="corporate" className="bg-blue-100/30 dark:bg-gray-800/50 rounded-[2.5rem] p-8 md:p-16 border border-blue-200/50 dark:border-gray-700 relative overflow-hidden">
-            <div className="relative z-10">
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
-                <div className="flex items-center">
-                  <div className="p-4 bg-corporate-blue dark:bg-blue-600 rounded-2xl mr-6 shadow-lg shadow-blue-500/20">
-                    <Briefcase className="h-8 w-8 text-white" />
-                  </div>
-                  <div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">Corporate Jobs</h2>
-                    <p className="text-gray-700 dark:text-gray-400 mt-1 uppercase tracking-widest text-xs font-black">Live Portals</p>
-                  </div>
-                </div>
-                <button className="bg-corporate-blue dark:bg-blue-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-corporate-dark dark:hover:bg-blue-700 transition-all hover:scale-105 shadow-xl shadow-blue-500/10">
-                  Search Openings
-                </button>
-              </div>
-              <div className="bg-white dark:bg-gray-900 h-96 rounded-3xl border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center shadow-inner group">
-                <div className="text-center p-8">
-                  <div className="w-20 h-20 bg-gray-50 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <Briefcase className="h-8 w-8 text-gray-300 dark:text-gray-600" />
-                  </div>
-                  <p className="mb-2 font-bold text-gray-900 dark:text-white text-xl">Zoho Recruit Integration</p>
-                  <p className="text-gray-500 dark:text-gray-500 max-w-sm">The job listing widget will appear here, synced with your recruitment database.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Education Jobs Section */}
           <div id="education" className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-blue-100/30 dark:bg-gray-800/50 p-8 md:p-16 rounded-[2.5rem] border border-blue-200 dark:border-gray-800">
             <div>
@@ -75,13 +46,21 @@ const JobSeekers: React.FC = () => {
               <p className="text-xl text-gray-800 dark:text-gray-300 mb-10 leading-relaxed font-bold">
                 Specialized opportunities for teachers, professors, and administrative staff in top schools and universities across India.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-10">
                 {['K-12 Roles', 'University Roles', 'Academic Support'].map((label, i) => (
                   <button key={i} className="flex-1 px-6 py-4 rounded-xl font-bold border-2 border-blue-100 dark:border-gray-700 text-gray-800 dark:text-gray-400 hover:border-corporate-blue dark:hover:border-blue-500 hover:text-corporate-blue dark:hover:text-blue-400 transition-all text-sm">
                     {label}
                   </button>
                 ))}
               </div>
+              <a
+                href="https://edassist.co.in/jobsseekers/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-corporate-blue dark:bg-blue-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-corporate-dark dark:hover:bg-blue-700 transition-all hover:scale-105 shadow-xl shadow-blue-500/10"
+              >
+                Job Seeker's Login <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </div>
             <div className="relative group overflow-hidden rounded-[2.5rem] aspect-square shadow-2xl border border-blue-100 dark:border-gray-800">
               <img
@@ -105,9 +84,12 @@ const JobSeekers: React.FC = () => {
                 <p className="text-lg text-gray-400 mb-10 leading-relaxed font-bold">
                   70% of resumes are rejected by ATS. Create a professional, ATS-friendly resume in minutes with our world-class partner tools.
                 </p>
-                <a href="#" className="inline-flex items-center text-blue-400 font-black text-lg hover:underline underline-offset-8">
+                <NavLink
+                  to="/job-seekers/cv-builder"
+                  className="inline-flex items-center text-blue-400 font-black text-lg hover:underline underline-offset-8"
+                >
                   Start Building <ArrowRight className="ml-3 h-6 w-6" />
-                </a>
+                </NavLink>
               </div>
             </div>
 
@@ -121,7 +103,12 @@ const JobSeekers: React.FC = () => {
                 <p className="text-lg text-gray-400 mb-10 leading-relaxed font-bold">
                   Stand out from the crowd. Access curated courses in IT, Management, and Soft Skills to boost your employability.
                 </p>
-                <a href="#" className="inline-flex items-center text-blue-400 font-black text-lg hover:underline underline-offset-8">
+                <a
+                  href="https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-400 font-black text-lg hover:underline underline-offset-8"
+                >
                   Browse Catalog <ArrowRight className="ml-3 h-6 w-6" />
                 </a>
               </div>

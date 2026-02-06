@@ -13,6 +13,8 @@ import TermsAndConditions from './pages/TermsAndConditions';
 import FraudAlert from './pages/FraudAlert';
 import FAQ from './pages/FAQ';
 import SiteMap from './pages/SiteMap';
+import CVBuilder from './pages/CVBuilder';
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -36,7 +38,9 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:id" element={<ServiceDetail />} />
+            <Route path="/job-seekers/cv-builder" element={<CVBuilder />} />
             <Route path="/job-seekers/*" element={<JobSeekers />} />
+
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsAndConditions />} />

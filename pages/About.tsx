@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ArrowRight, CheckCircle } from 'lucide-react';
+import { STATS } from '../constants';
 
 const About: React.FC = () => {
   return (
@@ -34,15 +35,13 @@ const About: React.FC = () => {
               </div>
 
               {/* Stats Section */}
-              <div className="grid grid-cols-2 gap-8 mt-12 pt-12 border-t border-gray-200 dark:border-gray-800">
-                <div>
-                  <span className="block text-4xl font-extrabold text-corporate-blue dark:text-blue-500">15+</span>
-                  <span className="text-gray-700 dark:text-gray-400 font-bold">Years Experience</span>
-                </div>
-                <div>
-                  <span className="block text-4xl font-extrabold text-corporate-blue dark:text-blue-500">200+</span>
-                  <span className="text-gray-700 dark:text-gray-400 font-bold">Global Clients</span>
-                </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-12 pt-12 border-t border-gray-200 dark:border-gray-800">
+                {STATS.map((stat, index) => (
+                  <div key={index}>
+                    <span className="block text-4xl font-extrabold text-corporate-blue dark:text-blue-500">{stat.value}</span>
+                    <span className="text-gray-700 dark:text-gray-400 font-bold">{stat.label}</span>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="relative group">

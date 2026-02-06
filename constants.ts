@@ -26,7 +26,7 @@ import { NavItem, Service, Stat, JobSeekerCard, Industry } from './types';
 
 export const COMPANY_NAME = "HRassistance Consultancy LLP";
 export const CONTACT_EMAIL = "info@hrassitance.co.in";
-export const CONTACT_PHONE = "+91 98765 43210";
+
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -62,9 +62,10 @@ export const NAV_ITEMS: NavItem[] = [
     children: [
       { label: 'Browse Jobs', path: 'https://hrassistance.zohorecruit.com/jobs/Careers' },
       { label: 'Upskilling Courses', path: 'https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369', isExternal: true },
-      { label: 'Resume Building', path: 'https://zety.com/resume-builder?ref=21193&click=497&reqid=4525880&utm_source=Trace-Advertising&utm_medium=affiliate&utm_campaign=trace-zty-resume-builder-subs-21193', isExternal: true },
+      { label: 'Resume Building', path: '/job-seekers/cv-builder' },
     ]
   },
+
   { label: 'Contact Us', path: '/contact' },
 ];
 
@@ -188,14 +189,16 @@ export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
     path: 'http://www.edassist.co.in',
     isExternal: true
   },
+
   {
     title: 'Build Your CV',
     description: 'Create a professional resume that gets noticed.',
     icon: FileText,
     actionText: 'Build Now',
-    path: 'https://zety.com/resume-builder?ref=21193&click=497&reqid=4525880&utm_source=Trace-Advertising&utm_medium=affiliate&utm_campaign=trace-zty-resume-builder-subs-21193',
-    isExternal: true
+    path: '/job-seekers/cv-builder',
+    isExternal: false
   },
+
   {
     title: 'Skill Courses',
     description: 'Upgrade your skills with industry-recognized certifications.',
