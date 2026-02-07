@@ -33,7 +33,7 @@ const FAQS_DATA: { category: string; items: FAQItem[] }[] = [
         items: [
             {
                 question: 'How can I post a job?',
-                answer: 'You can contact us directly via the "Hire Talent" page or reach out to our team at info@hrassitance.co.in to discuss hiring requirements.',
+                answer: 'You can contact us directly via the "Hire Talent" page or reach out to our team at info@hrassistance.co.in to discuss hiring requirements.',
             },
             {
                 question: 'What services do you offer?',
@@ -58,7 +58,7 @@ const FAQS_DATA: { category: string; items: FAQItem[] }[] = [
             },
             {
                 question: 'How do I contact support?',
-                answer: 'You can reach our help desk via email at info@hrassitance.co.in or call us at +91 98765 43210 during business hours.',
+                answer: 'You can reach our help desk via email at info@hrassistance.co.in during business hours.',
             }
         ]
     }
@@ -133,7 +133,7 @@ const FAQ: React.FC = () => {
                         Still have questions? We're here to help.
                     </p>
                     <a
-                        href="mailto:info@hrassitance.co.in"
+                        href="mailto:info@hrassistance.co.in"
                         className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-corporate-blue hover:bg-corporate-dark transition-colors shadow-sm"
                     >
                         Contact Support

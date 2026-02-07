@@ -148,7 +148,7 @@ const TermsAndConditions: React.FC = () => {
                             <p className="text-sm text-gray-500 dark:text-gray-400">(HRassistance Consultancy LLP)</p>
                             <div className="flex items-center mt-2">
                                 <Mail className="h-4 w-4 mr-2" />
-                                <a href="mailto:info@hrassitance.co.in" className="text-corporate-blue hover:underline">info@hrassitance.co.in</a>
+                                <a href="mailto:info@hrassistance.co.in" className="text-corporate-blue hover:underline">info@hrassistance.co.in</a>
                             </div>
                             <div className="flex items-start mt-2">
                                 <MapPin className="h-4 w-4 mr-2 mt-1" />

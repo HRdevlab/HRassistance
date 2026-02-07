@@ -25,7 +25,7 @@ import {
 import { NavItem, Service, Stat, JobSeekerCard, Industry } from './types';
 
 export const COMPANY_NAME = "HRassistance Consultancy LLP";
-export const CONTACT_EMAIL = "info@hrassitance.co.in";
+export const CONTACT_EMAIL = "info@hrassistance.co.in";
 
 
 export const NAV_ITEMS: NavItem[] = [

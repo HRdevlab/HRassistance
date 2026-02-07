@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:info@hrassitance.co.in"
+                href="mailto:info@hrassistance.co.in"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Email"
               >
