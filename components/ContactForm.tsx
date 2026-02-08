@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-lg placeholder:text-gray-400" placeholder="John Doe"
+            className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-base md:text-lg placeholder:text-gray-400" placeholder="John Doe"
           />
         </div>
         <div className="relative group">
@@ -78,7 +78,7 @@ const ContactForm: React.FC = () => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-lg placeholder:text-gray-400"
+            className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-base md:text-lg placeholder:text-gray-400"
             placeholder="hello@example.com"
           />
         </div>
@@ -93,7 +93,7 @@ const ContactForm: React.FC = () => {
           required
           value={formData.subject}
           onChange={handleChange}
-          className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-lg placeholder:text-gray-400"
+          className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-base md:text-lg placeholder:text-gray-400"
           placeholder="Inquiry regarding services"
         />
       </div>
@@ -107,7 +107,7 @@ const ContactForm: React.FC = () => {
           required
           value={formData.message}
           onChange={handleChange}
-          className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-lg resize-none placeholder:text-gray-400"
+          className="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-xl py-3 px-4 outline-none focus:border-corporate-blue transition-all text-gray-900 dark:text-white font-medium text-base md:text-lg resize-none placeholder:text-gray-400"
           placeholder="Write here your message"
         ></textarea>
       </div>
@@ -117,7 +117,7 @@ const ContactForm: React.FC = () => {
           type="submit"
           disabled={status === 'loading'}
           className={`${status === 'loading' ? 'opacity-70 cursor-not-allowed' : ''
-            } bg-corporate-blue dark:bg-blue-600 text-white font-bold px-12 py-5 rounded-2xl shadow-xl shadow-blue-500/20 hover:bg-corporate-dark dark:hover:bg-blue-700 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center text-lg w-full md:w-auto`}
+            } bg-corporate-blue dark:bg-blue-600 text-white font-bold px-12 py-5 rounded-2xl shadow-xl shadow-blue-500/20 hover:bg-corporate-dark dark:hover:bg-blue-700 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center text-base md:text-lg w-full md:w-auto`}
         >
           {status === 'loading' ? 'Sending...' : 'Send Message'}
         </button>
