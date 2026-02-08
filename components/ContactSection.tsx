@@ -29,7 +29,7 @@ const ContactSection: React.FC = () => {
                                     <MapPin className="h-5 w-5 text-white" />
                                 </div>
                                 <div className="text-lg font-bold leading-snug">
-                                    205 A, Town Square, Viman Nagar, Pune, India
+                                    Town Square Building, 116, Mhada Colony, Viman Nagar, Pune, Maharashtra 411014
                                 </div>
                             </div>
                         </div>

@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
         {/* Map Section */}
         <div className="mt-20 bg-blue-100/20 dark:bg-gray-800 rounded-[2.5rem] h-[400px] overflow-hidden relative border border-blue-200 dark:border-gray-700 group shadow-2xl">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2619!2d73.9167!3d18.5622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4136c54!2sTown%20Square%20Shopping%20Center!5e0!3m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.13095!2d73.91671!3d18.56214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4136c54!2vTown%20Square%2C%20Viman%20Nagar%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v1707400000000!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
