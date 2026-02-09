@@ -27,7 +27,7 @@ const PrivacyPolicy: React.FC = () => {
                             HRassistance.co.in recognizes the importance of maintaining your privacy. We value your privacy and appreciate your trust in us. This Policy describes how we treat user information we collect on <a href="http://www.hrassistance.co.in" className="text-corporate-blue hover:underline">http://www.hrassistance.co.in</a> and other offline sources. This Privacy Policy applies to current and former visitors to our website and to our online customers. By visiting and/or using our website, you agree to this Privacy Policy.
                         </p>
                         <p>
-                            hrassistance.co.in is a property of <strong>HRassistance India Consultancy LLP</strong>, an Indian Company registered under the LLP Act, 2008 having its registered office at 205A, Town Square, Viman Nagar, Pune – 411014 (Maharashtra).
+                            hrassistance.co.in is a property of <strong>HRassistance India Consultancy LLP</strong>, an Indian Company registered under the LLP Act, 2008 having its registered office at 205 A, Town Square Shopping Center, New Airport Rd, Viman Nagar, Pune, Maharashtra 411014.
                         </p>
                     </section>
 
@@ -125,8 +125,8 @@ const PrivacyPolicy: React.FC = () => {
                         <p className="mb-4">In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below:</p>
                         <div className="space-y-2">
                             <p className="font-bold">Ms. Vijeta Rajoriya</p>
-                            <p>205A, Town Square, Viman Nagar</p>
-                            <p>Pune – 411014</p>
+                            <p>205 A, Town Square Shopping Center,</p>
+                            <p>New Airport Rd, Viman Nagar, Pune, Maharashtra 411014</p>
                             <div className="flex items-center mt-2">
                                 <Mail className="h-4 w-4 mr-2" />
                                 <a href="mailto:info@hrassistance.co.in" className="text-corporate-blue hover:underline">info@hrassistance.co.in</a>
