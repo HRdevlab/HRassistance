@@ -31,7 +31,7 @@ const ContactSection: React.FC = () => {
                                 </div>
                                 <div className="sm:hidden text-blue-200 text-sm font-semibold mb-1">Location:</div>
                                 <div className="text-base sm:text-lg font-bold leading-snug">
-                                    Town Square Building, 116, Mhada Colony, Viman Nagar, Pune, Maharashtra 411014
+                                    205 A, Town Square Shopping Center, New Airport Rd, Viman Nagar, Pune, Maharashtra 411014
                                 </div>
                             </div>
                         </div>
