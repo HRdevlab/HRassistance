@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, Mail, ShieldAlert, CheckCircle, XCircle } from 'lucide-react';
+import { AlertTriangle, ShieldAlert, CheckCircle } from 'lucide-react';
 
 const FraudAlert: React.FC = () => {
     return (
@@ -9,93 +9,102 @@ const FraudAlert: React.FC = () => {
                     <div className="inline-flex items-center justify-center p-3 bg-red-100 dark:bg-red-900/30 rounded-full mb-4">
                         <ShieldAlert className="h-8 w-8 text-red-600 dark:text-red-400" />
                     </div>
-                    <h1 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">Fraud Alert – Stay Safe While Using HRassistance</h1>
+                    <h1 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">Fraud Alert – Protect Yourself Online</h1>
                     <p className="text-xl text-gray-600 dark:text-gray-400">
-                        Your safety is our highest priority.
+                        Your safety is our top priority.
                     </p>
                 </div>
 
                 <div className="prose prose-lg dark:prose-invert max-w-none space-y-8 text-gray-700 dark:text-gray-300">
                     <section className="bg-red-50 dark:bg-red-900/10 p-6 rounded-xl border border-red-100 dark:border-red-900/30">
                         <p className="font-medium">
-                            While we ensure a secure platform, it's crucial for users to stay alert against fraudulent activities. Here are some warning signs and tips to help you avoid scams.
+                            While HRassistance maintains a secure platform, it’s important for visitors and candidates to stay vigilant against fraudulent activities. Please review the following warning signs and safety tips:
                         </p>
                     </section>
 
                     <div className="space-y-8">
                         <div className="flex gap-4">
                             <div className="flex-shrink-0 mt-1">
-                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-                                    <span className="font-bold text-red-600 dark:text-red-400">1</span>
+                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-xl">
+                                    🚫
                                 </div>
                             </div>
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Requests for Money</h2>
                                 <p>
-                                    Never pay to apply, get shortlisted, or attend an interview. HRassistance does not charge candidates for job access. Avoid anyone asking for deposits, fees, or advance payments in exchange for job offers.
+                                    HRassistance never charges candidates for applying, shortlisting, or attending interviews.
+                                    Avoid anyone asking for deposits, fees, or advance payments in exchange for job offers.
                                 </p>
                             </div>
                         </div>
 
                         <div className="flex gap-4">
                             <div className="flex-shrink-0 mt-1">
-                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-                                    <span className="font-bold text-red-600 dark:text-red-400">2</span>
+                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-xl">
+                                    📧
                                 </div>
                             </div>
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Fake Emails or Usernames</h2>
                                 <p>
-                                    Fraudsters may use misleading email addresses like Gmail or Yahoo. Official communication from HRassistance will always come from an <strong>@hrassistance.co.in</strong> email. Be cautious of unknown senders using our name.
+                                    Fraudsters may use free email services (e.g., Gmail, Yahoo) to impersonate HRassistance.
+                                    Official communication will only come from an <strong>@hrassistance.co.in</strong> email address.
+                                    Be cautious of unknown senders claiming to represent us.
                                 </p>
                             </div>
                         </div>
 
                         <div className="flex gap-4">
                             <div className="flex-shrink-0 mt-1">
-                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-                                    <span className="font-bold text-red-600 dark:text-red-400">3</span>
+                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-xl">
+                                    ✍️
                                 </div>
                             </div>
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Grammar and Spelling Mistakes</h2>
+                                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Poor Grammar or Spelling</h2>
                                 <p>
-                                    Poorly written job offers with incorrect grammar or formatting are red flags. Always verify offers that sound suspicious or too good to be true.
+                                    Scam job offers often contain errors in grammar, spelling, or formatting.
+                                    Treat offers that sound suspicious or “too good to be true” with caution.
                                 </p>
                             </div>
                         </div>
 
                         <div className="flex gap-4">
                             <div className="flex-shrink-0 mt-1">
-                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-                                    <span className="font-bold text-red-600 dark:text-red-400">4</span>
+                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-xl">
+                                    ⚠️
                                 </div>
                             </div>
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Unrealistic Promises or Pressure Tactics</h2>
                                 <p>
-                                    Phrases like “Job guaranteed in 24 hours” or “Pay now, confirm fast” are scam indicators. Trusted employers will always give you time and clarity.
+                                    Phrases like “Guaranteed job in 24 hours” or “Pay now to confirm” are clear red flags.
+                                    Genuine employers provide clarity and reasonable timelines.
                                 </p>
                             </div>
                         </div>
 
                         <div className="flex gap-4">
                             <div className="flex-shrink-0 mt-1">
-                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-                                    <span className="font-bold text-red-600 dark:text-red-400">5</span>
+                                <div className="h-8 w-8 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-xl">
+                                    📱
                                 </div>
                             </div>
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Unverified Interview Channels</h2>
                                 <p>
-                                    If you’re asked to interview via WhatsApp, Telegram, or unofficial links, be careful. Never share sensitive info like OTPs, bank details, or Aadhar numbers on such platforms.
+                                    Be cautious if asked to interview via WhatsApp, Telegram, or unofficial links.
+                                    Never share sensitive information such as OTPs, bank details, or Aadhaar numbers on these platforms.
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <section className="bg-green-50 dark:bg-green-900/10 p-6 rounded-xl border border-green-100 dark:border-green-900/30 mt-8">
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">How to Stay Safe</h2>
+                        <div className="flex items-center gap-2 mb-6">
+                            <span className="text-2xl">✅</span>
+                            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">How to Stay Safe</h2>
+                        </div>
                         <ul className="space-y-3">
                             <li className="flex items-start">
                                 <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 mr-2 mt-0.5" />
@@ -103,25 +112,28 @@ const FraudAlert: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 mr-2 mt-0.5" />
-                                <span>Verify the job poster's email and contact details.</span>
+                                <span>Verify the sender’s email and contact details before responding.</span>
                             </li>
                             <li className="flex items-start">
                                 <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 mr-2 mt-0.5" />
-                                <span>Never share your personal or financial info without confirmation.</span>
+                                <span>Never share personal or financial information without proper confirmation.</span>
                             </li>
                             <li className="flex items-start">
                                 <AlertTriangle className="h-5 w-5 text-amber-500 mr-2 mt-0.5" />
-                                <span>Report suspicious activity to <a href="mailto:info@hrassistance.co.in" className="text-corporate-blue hover:underline">info@hrassistance.co.in</a>.</span>
+                                <span>Report suspicious activity immediately to <a href="mailto:info@hrassistance.co.in" className="text-corporate-blue hover:underline">info@hrassistance.co.in</a>.</span>
                             </li>
                         </ul>
-                        <p className="mt-6 text-sm italic">
-                            Stay updated and aware — your safety matters. We’re committed to building a secure and trustworthy job-seeking experience for the education community.
-                        </p>
+                        <div className="mt-6 flex items-start gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
+                            <span className="text-2xl mt-1">🔒</span>
+                            <p className="text-sm font-medium text-gray-800 dark:text-gray-200">
+                                Stay alert, stay safe. HRassistance is committed to building a secure and trustworthy experience for candidates and visitors.
+                            </p>
+                        </div>
                     </section>
 
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

@@ -11,7 +11,7 @@ const PrivacyPolicy: React.FC = () => {
                     </div>
                     <h1 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">HRassistance India Privacy Policy</h1>
                     <p className="text-gray-600 dark:text-gray-400">
-                        Last Updated: 30.09.2019
+                        Last Updated: 01/03/2026
                     </p>
                 </div>
 
@@ -124,7 +124,8 @@ const PrivacyPolicy: React.FC = () => {
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Grievance Officer</h2>
                         <p className="mb-4">In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below:</p>
                         <div className="space-y-2">
-                            <p className="font-bold">Ms. Vijeta Rajoriya</p>
+                            <p className="font-bold">Ms. Vijeta</p>
+                            <p>HRassistance India Consultancy LLP</p>
                             <p>205 A, Town Square Shopping Center,</p>
                             <p>New Airport Rd, Viman Nagar, Pune, Maharashtra 411014</p>
                             <div className="flex items-center mt-2">
