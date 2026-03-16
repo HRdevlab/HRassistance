@@ -24,7 +24,7 @@ import {
 } from 'lucide-react';
 import { NavItem, Service, Stat, JobSeekerCard, Industry } from './types';
 
-export const COMPANY_NAME = "HRassistance Consultancy LLP";
+export const COMPANY_NAME = "HRassistance India Consultancy LLP";
 export const CONTACT_EMAIL = "info@hrassistance.co.in";
 
 
@@ -66,7 +66,6 @@ export const NAV_ITEMS: NavItem[] = [
     ]
   },
 
-  { label: 'Contact Us', path: '/contact' },
 ];
 
 export const SERVICES: Service[] = [

@@ -18,7 +18,7 @@ const TermsAndConditions: React.FC = () => {
                 <div className="prose prose-lg dark:prose-invert max-w-none space-y-8 text-gray-700 dark:text-gray-300">
                     <section>
                         <p className="mb-4">
-                            Welcome to HRassistance Consultancy LLP ("HRassistance"). By visiting or using our website, you agree to the following Terms of Use.
+                            Welcome to HRassistance India Consultancy LLP ("HRassistance"). By visiting or using our website, you agree to the following Terms of Use.
                         </p>
                     </section>
 
@@ -109,7 +109,7 @@ const TermsAndConditions: React.FC = () => {
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">12. Contact Us</h2>
                         <p className="mb-4">For questions regarding these Terms of Use, please contact:</p>
                         <div className="space-y-2">
-                            <p className="font-bold">HRassistance Consultancy LLP</p>
+                            <p className="font-bold">HRassistance India Consultancy LLP</p>
                             <div className="flex items-center mt-2">
                                 <Mail className="h-4 w-4 mr-2" />
                                 <a href="mailto:info@hrassistance.co.in" className="text-corporate-blue hover:underline">info@hrassistance.co.in</a>
