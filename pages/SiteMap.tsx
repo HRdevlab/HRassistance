@@ -58,9 +58,9 @@ const SiteMap: React.FC = () => {
                             </li>
                             {/* Manually adding children based on constants */}
                             <li>
-                                <NavLink to="/job-seekers/corporate" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors ml-4">
+                                <a href="https://talent.hrassistance.co.in/careers" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors ml-4">
                                     <ChevronRight className="h-3 w-3 mr-2 text-gray-400" /> Browse Jobs
-                                </NavLink>
+                                </a>
                             </li>
                             <li>
                                 <a href="https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-corporate-blue dark:hover:text-blue-400 transition-colors ml-4">
@@ -157,7 +157,7 @@ const SiteMap: React.FC = () => {
                                 <span>+91 98765 43210</span>
                             </li>
                             <li>
-                                <a href="https://hrassistance.zohorecruit.com/jobs/Careers" target="_blank" rel="noopener noreferrer" className="hover:text-corporate-blue dark:hover:text-blue-400 transition-colors">
+                                <a href="https://talent.hrassistance.co.in/careers" target="_blank" rel="noopener noreferrer" className="hover:text-corporate-blue dark:hover:text-blue-400 transition-colors">
                                     Join Our Team (Careers)
                                 </a>
                             </li>

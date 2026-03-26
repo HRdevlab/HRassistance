@@ -17,22 +17,28 @@ const JobSeekers: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
-          {JOB_SEEKER_CARDS.map((card, idx) => (
-            <NavLink
-              key={idx}
-              to={card.path}
-              className="bg-blue-50/50 dark:bg-gray-800 border border-blue-100 dark:border-gray-700 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 flex flex-col h-full group hover:-translate-y-1"
-            >
-              <div className="mb-6 p-4 bg-blue-100 dark:bg-blue-900/40 w-fit rounded-xl group-hover:bg-corporate-blue transition-colors border border-blue-200 dark:border-transparent">
-                <card.icon className="h-6 w-6 text-corporate-blue dark:text-blue-400 group-hover:text-white transition-colors" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{card.title}</h3>
-              <p className="text-gray-800 dark:text-gray-300 text-sm mb-8 flex-grow leading-relaxed font-medium">{card.description}</p>
-              <span className="text-corporate-blue dark:text-blue-400 font-black text-sm flex items-center">
-                {card.actionText} <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-              </span>
-            </NavLink>
-          ))}
+          {JOB_SEEKER_CARDS.map((card, idx) => {
+            const isExternal = card.path.startsWith('http');
+            const CardComponent = isExternal ? 'a' : NavLink;
+            const extraProps = isExternal ? { href: card.path, target: "_blank", rel: "noopener noreferrer" } : { to: card.path };
+
+            return (
+              <CardComponent
+                key={idx}
+                {...extraProps}
+                className="bg-blue-50/50 dark:bg-gray-800 border border-blue-100 dark:border-gray-700 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 flex flex-col h-full group hover:-translate-y-1"
+              >
+                <div className="mb-6 p-4 bg-blue-100 dark:bg-blue-900/40 w-fit rounded-xl group-hover:bg-corporate-blue transition-colors border border-blue-200 dark:border-transparent">
+                  <card.icon className="h-6 w-6 text-corporate-blue dark:text-blue-400 group-hover:text-white transition-colors" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{card.title}</h3>
+                <p className="text-gray-800 dark:text-gray-300 text-sm mb-8 flex-grow leading-relaxed font-medium">{card.description}</p>
+                <span className="text-corporate-blue dark:text-blue-400 font-black text-sm flex items-center">
+                  {card.actionText} <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                </span>
+              </CardComponent>
+            );
+          })}
         </div>
 
         <div className="space-y-32">

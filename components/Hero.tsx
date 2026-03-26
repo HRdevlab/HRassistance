@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </NavLink>
             <a
-              href="https://hrassistance.zohorecruit.com/jobs/Careers"
+              href="https://talent.hrassistance.co.in/careers"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex justify-center items-center px-8 py-4 border-2 border-white/40 text-base font-bold rounded bg-white/10 text-white hover:bg-white/20 transition-all duration-300 backdrop-blur-md hover:-translate-y-1"

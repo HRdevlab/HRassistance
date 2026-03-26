@@ -60,7 +60,7 @@ export const NAV_ITEMS: NavItem[] = [
     label: 'Job Seekers',
     path: '/job-seekers',
     children: [
-      { label: 'Browse Jobs', path: 'https://hrassistance.zohorecruit.com/jobs/Careers' },
+      { label: 'Browse Jobs', path: 'https://talent.hrassistance.co.in/careers', isExternal: true },
       { label: 'Upskilling Courses', path: 'https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369', isExternal: true },
       { label: 'Resume Building', path: '/job-seekers/cv-builder' },
     ]
@@ -177,7 +177,7 @@ export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
     description: 'Explore opportunities with top MNCs and Indian firms.',
     icon: Briefcase,
     actionText: 'Browse Jobs',
-    path: 'https://hrassistance.zohorecruit.com/jobs/Careers',
+    path: 'https://talent.hrassistance.co.in/careers',
     isExternal: true
   },
   {
