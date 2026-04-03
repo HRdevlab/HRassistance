@@ -61,6 +61,7 @@ export const NAV_ITEMS: NavItem[] = [
     path: '/job-seekers',
     children: [
       { label: 'Browse Jobs', path: 'https://talent.hrassistance.co.in/careers', isExternal: true },
+      { label: 'Education Jobs', path: 'https://www.edassist.co.in', isExternal: true },
       { label: 'Upskilling Courses', path: 'https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369', isExternal: true },
       { label: 'Resume Building', path: '/job-seekers/cv-builder' },
     ]
