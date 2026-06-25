@@ -14,6 +14,7 @@ import FraudAlert from './pages/FraudAlert';
 import FAQ from './pages/FAQ';
 import SiteMap from './pages/SiteMap';
 import CVBuilder from './pages/CVBuilder';
+import Recruitizr from './pages/Recruitizr';
 
 
 const ScrollToTop = () => {
@@ -47,6 +48,7 @@ const App: React.FC = () => {
             <Route path="/trust-safety" element={<FraudAlert />} />
             <Route path="/faqs" element={<FAQ />} />
             <Route path="/sitemap" element={<SiteMap />} />
+            <Route path="/recruitizr" element={<Recruitizr />} />
           </Routes>
         </main>
         <Footer />
